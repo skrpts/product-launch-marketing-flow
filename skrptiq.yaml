@@ -1,0 +1,38 @@
+name: "product-launch-marketing-flow"
+display_name: "Product Launch Marketing Flow"
+description: "Go-to-market marketing plans for product launches — messaging, channels, timeline, and measurement"
+version: "1.0.0"
+engine: ">=1.0.0"
+
+author:
+  name: "skrptiq"
+  url: "https://hub.skrptiq.ai"
+licence: "MIT"
+repository: "https://github.com/skrpts/product-launch-marketing-flow"
+
+category: "marketing"
+tags:
+  - "product-launch"
+  - "go-to-market"
+  - "launch-planning"
+  - "marketing-strategy"
+  - "campaign-management"
+
+requires:
+  services:
+    - "anthropic-claude"
+  permissions: []
+  data_handling:
+    - "product-information"
+    - "market-data"
+    - "customer-segments"
+
+contents:
+  skills: 3
+  prompts: 5
+  workflows: 1
+  services: 1
+  sources: 1
+  documents: 1
+  assets: 2
+  total: 14
