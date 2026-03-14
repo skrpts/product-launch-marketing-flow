@@ -5,7 +5,7 @@ title: Channel Strategy
 description: "Evaluates and recommends marketing channel allocation for a product launch based on audience, budget, and goals"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: product-launch-framework
     type: references

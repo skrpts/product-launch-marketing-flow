@@ -5,7 +5,7 @@ title: Launch Messaging Development
 description: "Develops the strategic messaging foundation for a product launch — positioning, value propositions, and messaging hierarchy"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: product-launch-framework
     type: references

@@ -5,7 +5,7 @@ title: Launch Measurement
 description: "Defines launch success metrics, tracking frameworks, and post-launch performance analysis methodology"
 tags: [Production, Tested]
 connections:
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: product-launch-framework
     type: references

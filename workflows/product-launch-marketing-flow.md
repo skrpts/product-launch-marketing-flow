@@ -21,7 +21,7 @@ connections:
     type: uses
   - target: post-launch-analysis-prompt
     type: uses
-  - target: claude-service
+  - target: llm-service
     type: runs_on
   - target: product-launch-framework
     type: references
@@ -103,3 +103,48 @@ Invoke the **launch-measurement** skill to evaluate launch performance against g
 | **Tier 1 — Major** | New product, new market entry, rebrand | Full pipeline, all stages | 6-8 weeks |
 | **Tier 2 — Significant** | Major feature, new pricing, partnership | Full pipeline, abbreviated Phase 2 | 4-6 weeks |
 | **Tier 3 — Incremental** | Feature update, minor enhancement | Stages 1.1, 2.2, and 3.1 only | 2-3 weeks |
+
+## Inputs
+
+| Name | Required | Description | Example |
+|------|----------|-------------|---------|
+| `{{input.product_details}}` | Yes | Product details | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.competitive_landscape}}` | Yes | competitive landscape | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.customer_research}}` | Yes | customer research | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.market_context}}` | No | market context | `Paste a short brief describing the goal, audience, and constraints.` |
+
+## Outputs
+
+| Name | Description |
+|------|-------------|
+| Positioning statement, messaging pillars, key claims | Positioning statement, messaging pillars, key claims with proof points, audience-specific value propositions |
+| Complete launch plan using the launch-plan-template format, | Complete launch plan using the launch-plan-template format, with timeline documented in the launch-timeline-template |
+| Publication-ready press release | Publication-ready press release with headline, subheadline, body, quotes, boilerplate, and media contact information |
+| Complete email sequence | Complete email sequence with subject lines, preview text, body copy, and CTAs for each email |
+| Launch performance report | Launch performance report with metric analysis, channel effectiveness assessment, and recommendations for future launches |
+
+## Setup
+
+Before running this workflow:
+
+1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
+2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
+
+## Provider Notes
+
+- Most stages work with any capable model; stronger models usually improve synthesis, judgement, and writing quality.
+- Extraction, classification, and formatting steps generally run well on smaller or faster models.
+- Because there are no vendor-specific integrations here, provider choice is mostly a trade-off between speed, quality, and cost.
+
+## Example Input
+
+To test this workflow immediately after import:
+
+```
+Product Details: "Paste the relevant brief, notes, source material, or dataset here."
+Competitive Landscape: "Paste the relevant brief, notes, source material, or dataset here."
+Customer Research: "Paste the relevant brief, notes, source material, or dataset here."
+Market Context: "Paste a short brief describing the goal, audience, and constraints."
+```
+
