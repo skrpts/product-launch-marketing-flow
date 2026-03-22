@@ -34,7 +34,7 @@ metadata:
 
 ## Overview
 
-This workflow produces a comprehensive marketing plan for a product launch, from initial positioning and messaging through channel strategy, campaign execution assets, and post-launch performance analysis. It is designed to run in phases that mirror the actual launch timeline: pre-launch preparation, launch execution, and post-launch optimisation.
+This workflow produces a complete marketing plan for a product launch, from initial positioning and messaging through channel strategy, campaign execution assets, and post-launch performance analysis. It is designed to run in phases that mirror the actual launch timeline: pre-launch preparation, launch execution, and post-launch optimisation.
 
 ## Pipeline Stages
 
@@ -54,7 +54,7 @@ Invoke the **launch-messaging-development** skill to establish the strategic mes
 
 **Input:** Positioning outputs from Stage 1.1, budget, team resources, launch date, launch tier (major/minor/incremental)
 
-Invoke the **channel-strategy** skill to evaluate and recommend channel allocation. Then run the **launch-plan-generator** prompt to produce a comprehensive launch marketing plan with timeline, channel strategy, and resource allocation.
+Invoke the **channel-strategy** skill to evaluate and recommend channel allocation. Then run the **launch-plan-generator** prompt to produce a detailed launch marketing plan with timeline, channel strategy, and resource allocation.
 
 **Output:** Complete launch plan using the **launch-plan-template** format, with timeline documented in the **launch-timeline-template**.
 
@@ -84,7 +84,7 @@ Invoke the **launch-email-sequence-builder** prompt to design a multi-touch emai
 
 **Input:** Launch metrics (traffic, sign-ups, downloads, revenue, media coverage, social engagement), goals from the launch plan, channel-specific performance data
 
-Invoke the **launch-measurement** skill to evaluate launch performance against goals. Then run the **post-launch-analysis-prompt** to produce a comprehensive launch retrospective with recommendations.
+Invoke the **launch-measurement** skill to evaluate launch performance against goals. Then run the **post-launch-analysis-prompt** to produce a thorough launch retrospective with recommendations.
 
 **Output:** Launch performance report with metric analysis, channel effectiveness assessment, and recommendations for future launches.
 
@@ -108,10 +108,13 @@ Invoke the **launch-measurement** skill to evaluate launch performance against g
 
 | Name | Required | Description | Example |
 |------|----------|-------------|---------|
-| `{{input.product_details}}` | Yes | Product details | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.competitive_landscape}}` | Yes | competitive landscape | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.customer_research}}` | Yes | customer research | `Paste the relevant brief, notes, source material, or dataset here.` |
-| `{{input.market_context}}` | No | market context | `Paste a short brief describing the goal, audience, and constraints.` |
+| `{{input.product_name}}` | Yes | Product name | `Acme Analytics Pro` |
+| `{{input.product_details}}` | Yes | Product details (features, benefits, description) | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.target_audience}}` | Yes | Target audience segments | `Marketing managers at mid-size B2B SaaS companies` |
+| `{{input.competitive_landscape}}` | Yes | Competitive landscape | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.customer_research}}` | Yes | Customer research | `Paste the relevant brief, notes, source material, or dataset here.` |
+| `{{input.launch_date}}` | Yes | Launch date | `15 April 2026` |
+| `{{input.market_context}}` | No | Market context | `Paste a short brief describing the goal, audience, and constraints.` |
 
 ## Outputs
 
@@ -142,9 +145,12 @@ Before running this workflow:
 To test this workflow immediately after import:
 
 ```
+Product Name: "Acme Analytics Pro"
 Product Details: "Paste the relevant brief, notes, source material, or dataset here."
+Target Audience: "Marketing managers at mid-size B2B SaaS companies"
 Competitive Landscape: "Paste the relevant brief, notes, source material, or dataset here."
 Customer Research: "Paste the relevant brief, notes, source material, or dataset here."
+Launch Date: "15 April 2026"
 Market Context: "Paste a short brief describing the goal, audience, and constraints."
 ```
 

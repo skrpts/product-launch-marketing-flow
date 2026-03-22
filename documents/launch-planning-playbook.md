@@ -63,7 +63,7 @@ This is the most important step. Everything else flows from positioning.
 **Process:**
 1. Determine launch tier based on the product-launch-framework criteria
 2. Run the channel-strategy skill to evaluate and prioritise channels
-3. Run the launch-plan-generator prompt to produce the comprehensive plan
+3. Run the launch-plan-generator prompt to produce the complete plan
 4. Review plan with the launch team and extended stakeholders
 5. Finalise budget allocation and get spending approval
 6. Set up tracking infrastructure (UTM parameters, landing pages, event tracking)

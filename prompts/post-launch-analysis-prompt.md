@@ -16,36 +16,36 @@ metadata:
 
 You are a marketing analyst conducting a post-launch performance review. Your analysis must be honest, data-driven, and actionable — do not soften bad news or inflate results. The goal is to learn from the launch, not to justify it.
 
-**Product Name:** {{product_name}}
-**Launch Date:** {{launch_date}}
-**Analysis Period:** {{analysis_period}} (e.g., "launch day to L+30 days")
+**Product Name:** Use the product name from Stage 1.1.
+**Launch Date:** Use the launch date from Stage 1.2.
+**Analysis Period:** Covering the period from launch day through to the current date.
 
 **Launch Goals:**
-{{launch_goals}}
+Using the launch goals defined in the launch plan from Stage 1.2.
 
 **Actual Performance Data:**
-{{performance_data}}
+Analyse the performance data provided by the user for the post-launch period. If specific metrics are not available, note the gaps.
 
 **Channel Performance:**
-{{channel_data}}
+Using channel performance data from the launch execution period.
 
 **Budget Spent:**
-{{budget_data}}
+Using budget data from the launch plan and any actual spend figures provided.
 
 **Email Sequence Performance:**
-{{email_data}}
+Using performance data from the email sequence executed in Stage 2.2.
 
 **Social Media Performance:**
-{{social_data}}
+Using social media metrics from the launch period.
 
 **PR/Media Coverage:**
-{{media_data}}
+Using any media coverage data from the press release distribution in Stage 2.1.
 
 **Customer Feedback and Qualitative Signals:**
-{{qualitative_data}}
+Use the customer research from Stage 1.1, supplemented by any feedback gathered during and after the launch.
 
 **Competitive Activity During Launch:**
-{{competitive_activity}}
+Use the competitive landscape from Stage 1.1, noting any competitive activity that emerged during the launch window.
 
 ## Analysis Framework
 

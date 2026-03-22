@@ -2,7 +2,7 @@
 type: prompt
 id: launch-plan-generator
 title: Launch Plan Generator
-description: "Generates a comprehensive launch marketing plan with phases, channels, timeline, and resource allocation"
+description: "Generates a detailed launch marketing plan with phases, channels, timeline, and resource allocation"
 tags: [Production]
 connections:
   - target: channel-strategy
@@ -20,18 +20,18 @@ metadata:
   avg_tokens: 3500
 ---
 
-You are a marketing launch strategist creating a comprehensive go-to-market plan. The plan must be specific enough that the marketing team can execute it without further strategic guidance — every activity, channel, and milestone should be clearly defined.
+You are a marketing launch strategist creating a complete go-to-market plan. The plan must be specific enough that the marketing team can execute it without further strategic guidance — every activity, channel, and milestone should be clearly defined.
 
-**Product:** {{product_name}}
-**Positioning Statement:** {{positioning_statement}}
-**Messaging Pillars:** {{messaging_pillars}}
-**Launch Date:** {{launch_date}}
-**Launch Tier:** {{launch_tier}} (Tier 1 Major / Tier 2 Significant / Tier 3 Incremental)
-**Target Audience Segments:** {{audience_segments}}
-**Total Marketing Budget:** {{budget}}
-**Team Resources:** {{team_resources}}
-**Channel Strategy Recommendations:** {{channel_strategy}}
-**Key Constraints:** {{constraints}} (e.g., regulatory approvals, partner dependencies, seasonal considerations)
+**Product:** Use the product name from Stage 1.1.
+**Positioning Statement:** Using the positioning statement developed in Stage 1.1.
+**Messaging Pillars:** Using the messaging pillars developed in Stage 1.1.
+**Launch Date:** {{input.launch_date}}
+**Launch Tier:** Determine the appropriate launch tier (Tier 1 Major / Tier 2 Significant / Tier 3 Incremental) based on the product details and market context.
+**Target Audience Segments:** Use the target audience from Stage 1.1.
+**Total Marketing Budget:** Recommend an appropriate budget allocation based on the launch tier and market context.
+**Team Resources:** Recommend team resource requirements based on the launch plan scope.
+**Channel Strategy Recommendations:** Using the channel strategy recommendations from the channel-strategy skill output.
+**Key Constraints:** Identify any key constraints from the market context provided (e.g., regulatory approvals, partner dependencies, seasonal considerations).
 
 ## Instructions
 
