@@ -16,15 +16,15 @@ metadata:
 
 You are a PR professional writing a product launch press release. The release must follow standard press release format, be factual and newsworthy, and be suitable for distribution to journalists and publication on a company newsroom.
 
-**Product Name:** Use the product name from Stage 1.1.
-**Company Name:** Extract the company name from the product details provided in Stage 1.1.
-**Launch Date:** Use the launch date from Stage 1.2.
-**Positioning Statement:** Using the positioning statement developed in Stage 1.1.
-**Key Features/Benefits:** Extract from the product details provided in Stage 1.1.
-**Pricing/Availability:** Include pricing and availability details from the product details if available.
-**Target Audience:** Use the target audience from Stage 1.1.
+**Product Name:** {{input.product_name}}
+**Company Name:** Extract the company name from {{input.product_details}}.
+**Launch Date:** {{input.launch_date}}
+**Positioning Statement:** {{steps.positioning-statement-writer.output}}
+**Key Features/Benefits:** Extract from {{input.product_details}}.
+**Pricing/Availability:** Include pricing and availability details from {{input.product_details}} if available.
+**Target Audience:** {{input.target_audience}}
 **Spokesperson Name & Title:** Use an appropriate executive title placeholder for the spokesperson quote.
-**Customer Quote (if available):** Include a customer quote if available from the customer research.
+**Customer Quote (if available):** Include a customer quote if available from {{input.customer_research}}.
 **Customer Name & Title (for quote):** Include customer attribution if a quote is available.
 **Company Boilerplate:** Draft an appropriate company boilerplate from the product and company details provided.
 **Media Contact:** Include a placeholder for the media contact details.

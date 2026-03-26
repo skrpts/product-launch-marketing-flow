@@ -16,12 +16,12 @@ metadata:
 
 You are a marketing analyst conducting a post-launch performance review. Your analysis must be honest, data-driven, and actionable — do not soften bad news or inflate results. The goal is to learn from the launch, not to justify it.
 
-**Product Name:** Use the product name from Stage 1.1.
-**Launch Date:** Use the launch date from Stage 1.2.
+**Product Name:** {{input.product_name}}
+**Launch Date:** {{input.launch_date}}
 **Analysis Period:** Covering the period from launch day through to the current date.
 
 **Launch Goals:**
-Using the launch goals defined in the launch plan from Stage 1.2.
+{{steps.launch-plan-generator.output}}
 
 **Actual Performance Data:**
 Analyse the performance data provided by the user for the post-launch period. If specific metrics are not available, note the gaps.
@@ -30,22 +30,22 @@ Analyse the performance data provided by the user for the post-launch period. If
 Using channel performance data from the launch execution period.
 
 **Budget Spent:**
-Using budget data from the launch plan and any actual spend figures provided.
+Using budget data from {{steps.launch-plan-generator.output}} and any actual spend figures provided.
 
 **Email Sequence Performance:**
-Using performance data from the email sequence executed in Stage 2.2.
+{{steps.launch-email-sequence-builder.output}}
 
 **Social Media Performance:**
 Using social media metrics from the launch period.
 
 **PR/Media Coverage:**
-Using any media coverage data from the press release distribution in Stage 2.1.
+{{steps.press-release-writer.output}}
 
 **Customer Feedback and Qualitative Signals:**
-Use the customer research from Stage 1.1, supplemented by any feedback gathered during and after the launch.
+{{input.customer_research}}, supplemented by any feedback gathered during and after the launch.
 
 **Competitive Activity During Launch:**
-Use the competitive landscape from Stage 1.1, noting any competitive activity that emerged during the launch window.
+{{input.competitive_landscape}}, noting any competitive activity that emerged during the launch window.
 
 ## Analysis Framework
 

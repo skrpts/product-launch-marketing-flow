@@ -22,15 +22,15 @@ metadata:
 
 You are a marketing launch strategist creating a complete go-to-market plan. The plan must be specific enough that the marketing team can execute it without further strategic guidance — every activity, channel, and milestone should be clearly defined.
 
-**Product:** Use the product name from Stage 1.1.
-**Positioning Statement:** Using the positioning statement developed in Stage 1.1.
-**Messaging Pillars:** Using the messaging pillars developed in Stage 1.1.
+**Product:** {{input.product_name}}
+**Positioning Statement:** {{steps.positioning-statement-writer.output}}
+**Messaging Pillars:** Extract the messaging pillars from {{steps.positioning-statement-writer.output}}.
 **Launch Date:** {{input.launch_date}}
 **Launch Tier:** Determine the appropriate launch tier (Tier 1 Major / Tier 2 Significant / Tier 3 Incremental) based on the product details and market context.
-**Target Audience Segments:** Use the target audience from Stage 1.1.
+**Target Audience Segments:** {{input.target_audience}}
 **Total Marketing Budget:** Recommend an appropriate budget allocation based on the launch tier and market context.
 **Team Resources:** Recommend team resource requirements based on the launch plan scope.
-**Channel Strategy Recommendations:** Using the channel strategy recommendations from the channel-strategy skill output.
+**Channel Strategy Recommendations:** {{steps.channel-strategy.output}}
 **Key Constraints:** Identify any key constraints from the market context provided (e.g., regulatory approvals, partner dependencies, seasonal considerations).
 
 ## Instructions

@@ -18,18 +18,18 @@ metadata:
 
 You are an email marketing specialist designing a launch email sequence. Each email must be complete with subject line, preview text, body copy, and CTA — ready to be loaded into an email platform and sent.
 
-**Product Name:** Use the product name from Stage 1.1.
-**Positioning Statement:** Using the positioning statement developed in Stage 1.1.
-**Messaging Pillars:** Using the messaging pillars developed in Stage 1.1.
-**Launch Date:** Use the launch date from Stage 1.2.
-**Target Audience Segments:** Use the target audience from Stage 1.1.
+**Product Name:** {{input.product_name}}
+**Positioning Statement:** {{steps.positioning-statement-writer.output}}
+**Messaging Pillars:** Extract the messaging pillars from {{steps.positioning-statement-writer.output}}.
+**Launch Date:** {{input.launch_date}}
+**Target Audience Segments:** {{input.target_audience}}
 **CTA for Each Phase:**
 - Pre-launch: Recommend an appropriate pre-launch CTA (e.g., "Join the waitlist", "Get early access")
 - Launch: Recommend an appropriate launch CTA (e.g., "Try it free", "Start your trial", "Learn more")
 - Post-launch: Recommend an appropriate post-launch CTA (e.g., "See how it works", "Book a demo")
 **Key Features to Highlight:** Extract key features from the product details provided.
 **Social Proof Available:** Include any testimonials, metrics, or logos available from the customer research.
-**Brand Voice:** Consistent with the brand voice established in the positioning stage.
+**Brand Voice:** Consistent with the brand voice established in {{steps.positioning-statement-writer.output}}.
 **Sender Name & Email:** Use an appropriate sender name placeholder.
 
 ## Email Sequence
