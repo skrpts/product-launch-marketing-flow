@@ -27,6 +27,8 @@ connections:
     type: references
   - target: launch-planning-playbook
     type: references
+  - target: brand-voice-guide
+    type: references
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
