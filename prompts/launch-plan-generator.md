@@ -3,7 +3,7 @@ type: prompt
 id: launch-plan-generator
 title: Launch Plan Generator
 description: "Generates a detailed launch marketing plan with phases, channels, timeline, and resource allocation"
-tags: [Production, planning:team, design:product, design:launch]
+tags: [Production, Campaign, Planning]
 connections:
   - target: channel-strategy
     type: derived_from

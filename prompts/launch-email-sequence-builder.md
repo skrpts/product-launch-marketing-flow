@@ -3,7 +3,7 @@ type: prompt
 id: launch-email-sequence-builder
 title: Launch Email Sequence Builder
 description: "Designs a multi-touch email sequence for product launch covering teaser, announcement, and nurture phases"
-tags: [Production, design:product, design:launch]
+tags: [Production, Campaign, Strategy]
 connections:
   - target: launch-messaging-development
     type: derived_from

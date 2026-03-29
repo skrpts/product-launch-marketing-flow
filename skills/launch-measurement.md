@@ -3,7 +3,7 @@ type: skill
 id: launch-measurement
 title: Launch Measurement
 description: "Defines launch success metrics, tracking frameworks, and post-launch performance analysis methodology"
-tags: [Production, Tested, data:metrics, design:product, design:launch]
+tags: [Production, Tested, Campaign, Metrics, Research]
 connections:
   - target: llm-service
     type: runs_on

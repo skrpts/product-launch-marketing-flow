@@ -3,7 +3,7 @@ type: document
 id: launch-planning-playbook
 title: Launch Planning Playbook
 description: "Step-by-step guide to planning and executing a product launch marketing campaign"
-tags: [Production, Tested, design:product, design:launch]
+tags: [Production, Tested, Campaign, Strategy]
 connections:
   - target: product-launch-framework
     type: references

@@ -3,7 +3,7 @@ type: asset
 id: launch-plan-template
 title: Launch Plan Template
 description: "Structured template for detailed product launch marketing plans"
-tags: [Production, design:product, design:launch]
+tags: [Production, Campaign, Strategy]
 connections: []
 metadata:
   asset_type: "template"
