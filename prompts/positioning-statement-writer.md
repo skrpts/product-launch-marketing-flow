@@ -3,7 +3,7 @@ type: prompt
 id: positioning-statement-writer
 title: Positioning Statement Writer
 description: "Crafts a positioning statement and messaging hierarchy for a product launch"
-tags: [Production]
+tags: [Production, design:product, design:launch]
 connections:
   - target: launch-messaging-development
     type: derived_from

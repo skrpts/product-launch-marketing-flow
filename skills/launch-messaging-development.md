@@ -3,7 +3,7 @@ type: skill
 id: launch-messaging-development
 title: Launch Messaging Development
 description: "Develops the strategic messaging foundation for a product launch — positioning, value propositions, and messaging hierarchy"
-tags: [Production, Tested]
+tags: [Production, Tested, design:product, design:launch]
 connections:
   - target: llm-service
     type: runs_on

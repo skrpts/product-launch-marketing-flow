@@ -3,7 +3,7 @@ type: workflow
 id: product-launch-marketing-flow
 title: Product Launch Marketing Flow
 description: "Go-to-market marketing plans for product launches — messaging, channels, timeline, and measurement"
-tags: [Production, Tested]
+tags: [Production, Tested, planning:campaign, design:product, design:launch]
 connections:
   - target: launch-messaging-development
     type: uses

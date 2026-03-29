@@ -3,7 +3,7 @@ type: prompt
 id: post-launch-analysis-prompt
 title: Post-Launch Analysis Prompt
 description: "Analyses launch performance against goals and recommends adjustments for ongoing marketing"
-tags: [Production]
+tags: [Production, design:product, design:launch]
 connections:
   - target: launch-measurement
     type: derived_from

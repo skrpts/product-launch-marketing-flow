@@ -3,7 +3,7 @@ type: asset
 id: launch-timeline-template
 title: Launch Timeline Template
 description: "Visual timeline template for product launch planning with relative date notation"
-tags: [Production]
+tags: [Production, design:product, design:launch]
 connections: []
 metadata:
   asset_type: "template"

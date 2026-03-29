@@ -3,7 +3,7 @@ type: source
 id: product-launch-framework
 title: Product Launch Framework
 description: "Reference framework for structured product launch planning and execution"
-tags: [Production, Tested]
+tags: [Production, Tested, design:product, design:launch]
 connections: []
 metadata:
   last_updated: "2026-03"

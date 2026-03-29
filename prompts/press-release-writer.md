@@ -3,7 +3,7 @@ type: prompt
 id: press-release-writer
 title: Press Release Writer
 description: "Writes a product launch press release following standard PR format and best practices"
-tags: [Production]
+tags: [Production, writing:copy, design:product, design:launch]
 connections:
   - target: launch-messaging-development
     type: derived_from

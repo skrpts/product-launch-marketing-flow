@@ -3,7 +3,7 @@ type: skill
 id: channel-strategy
 title: Channel Strategy
 description: "Evaluates and recommends marketing channel allocation for a product launch based on audience, budget, and goals"
-tags: [Production, Tested]
+tags: [Production, Tested, design:product, design:launch]
 connections:
   - target: llm-service
     type: runs_on
