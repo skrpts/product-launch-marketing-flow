@@ -32,6 +32,8 @@ connections:
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
+  - target: audience-segmentation
+    type: uses
 ---
 
 ## Overview
