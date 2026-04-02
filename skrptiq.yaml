@@ -2,7 +2,7 @@ id: "abfa823e-6b9f-49a2-9d7a-032da39bd4d2"
 name: "product-launch-marketing-flow"
 display_name: "Product Launch Marketing Flow"
 description: "Go-to-market marketing plans for product launches — messaging, channels, timeline, and measurement"
-version: "1.0.0"
+version: "1.0.1"
 engine: ">=1.0.0"
 
 author:
@@ -30,11 +30,11 @@ requires:
     - "customer-segments"
 
 contents:
-  skills: 3
+  skills: 4
   prompts: 5
   workflows: 1
   services: 1
   sources: 2
   documents: 1
   assets: 2
-  total: 15
+  total: 16
