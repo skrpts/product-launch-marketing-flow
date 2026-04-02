@@ -29,10 +29,10 @@ connections:
     type: references
   - target: brand-voice-guide
     type: references
+  - target: audience-segmentation
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
-  - target: audience-segmentation
     type: uses
 ---
 
