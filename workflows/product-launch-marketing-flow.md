@@ -31,6 +31,8 @@ connections:
     type: references
   - target: audience-segmentation
     type: uses
+  - target: image-briefing
+    type: uses
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
