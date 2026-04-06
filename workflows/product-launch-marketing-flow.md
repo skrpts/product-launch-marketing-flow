@@ -11,16 +11,6 @@ connections:
     type: uses
   - target: launch-measurement
     type: uses
-  - target: positioning-statement-writer
-    type: uses
-  - target: launch-plan-generator
-    type: uses
-  - target: press-release-writer
-    type: uses
-  - target: launch-email-sequence-builder
-    type: uses
-  - target: post-launch-analysis-prompt
-    type: uses
   - target: llm-service
     type: runs_on
   - target: product-launch-framework
