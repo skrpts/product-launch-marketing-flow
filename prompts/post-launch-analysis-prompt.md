@@ -21,7 +21,7 @@ You are a marketing analyst conducting a post-launch performance review. Your an
 **Analysis Period:** Covering the period from launch day through to the current date.
 
 **Launch Goals:**
-{{steps.launch-plan-generator.output}}
+{{steps.Channel Strategy.output}}
 
 **Actual Performance Data:**
 Analyse the performance data provided by the user for the post-launch period. If specific metrics are not available, note the gaps.
@@ -30,16 +30,16 @@ Analyse the performance data provided by the user for the post-launch period. If
 Using channel performance data from the launch execution period.
 
 **Budget Spent:**
-Using budget data from {{steps.launch-plan-generator.output}} and any actual spend figures provided.
+Using budget data from {{steps.Channel Strategy.output}} and any actual spend figures provided.
 
 **Email Sequence Performance:**
-{{steps.launch-email-sequence-builder.output}}
+{{steps.Launch Messaging Development.output}}
 
 **Social Media Performance:**
 Using social media metrics from the launch period.
 
 **PR/Media Coverage:**
-{{steps.press-release-writer.output}}
+{{steps.Launch Messaging Development.output}}
 
 **Customer Feedback and Qualitative Signals:**
 {{input.customer_research}}, supplemented by any feedback gathered during and after the launch.
