@@ -19,7 +19,7 @@ You are a PR professional writing a product launch press release. The release mu
 **Product Name:** {{input.product_name}}
 **Company Name:** Extract the company name from {{input.product_details}}.
 **Launch Date:** {{input.launch_date}}
-**Positioning Statement:** {{steps.Launch Messaging Development.output}}
+**Positioning Statement:** {{steps.previous.output}}
 **Key Features/Benefits:** Extract from {{input.product_details}}.
 **Pricing/Availability:** Include pricing and availability details from {{input.product_details}} if available.
 **Target Audience:** {{input.target_audience}}

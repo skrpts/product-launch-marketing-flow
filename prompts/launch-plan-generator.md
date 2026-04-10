@@ -30,7 +30,7 @@ You are a marketing launch strategist creating a complete go-to-market plan. The
 **Target Audience Segments:** {{input.target_audience}}
 **Total Marketing Budget:** Recommend an appropriate budget allocation based on the launch tier and market context.
 **Team Resources:** Recommend team resource requirements based on the launch plan scope.
-**Channel Strategy Recommendations:** {{steps.Channel Strategy.output}}
+**Channel Strategy Recommendations:** {{steps.previous.output}}
 **Key Constraints:** Identify any key constraints from the market context provided (e.g., regulatory approvals, partner dependencies, seasonal considerations).
 
 ## Instructions

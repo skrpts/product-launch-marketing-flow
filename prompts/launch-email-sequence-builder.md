@@ -19,8 +19,8 @@ metadata:
 You are an email marketing specialist designing a launch email sequence. Each email must be complete with subject line, preview text, body copy, and CTA — ready to be loaded into an email platform and sent.
 
 **Product Name:** {{input.product_name}}
-**Positioning Statement:** {{steps.Launch Messaging Development.output}}
-**Messaging Pillars:** Extract the messaging pillars from {{steps.Launch Messaging Development.output}}.
+**Positioning Statement:** {{steps.previous.output}}
+**Messaging Pillars:** Extract the messaging pillars from {{steps.previous.output}}.
 **Launch Date:** {{input.launch_date}}
 **Target Audience Segments:** {{input.target_audience}}
 **CTA for Each Phase:**
@@ -29,7 +29,7 @@ You are an email marketing specialist designing a launch email sequence. Each em
 - Post-launch: Recommend an appropriate post-launch CTA (e.g., "See how it works", "Book a demo")
 **Key Features to Highlight:** Extract key features from the product details provided.
 **Social Proof Available:** Include any testimonials, metrics, or logos available from the customer research.
-**Brand Voice:** Consistent with the brand voice established in {{steps.Launch Messaging Development.output}}.
+**Brand Voice:** Consistent with the brand voice established in {{steps.previous.output}}.
 **Sender Name & Email:** Use an appropriate sender name placeholder.
 
 ## Email Sequence
