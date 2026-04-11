@@ -4,6 +4,37 @@ id: positioning-statement-writer
 title: Positioning Statement Writer
 description: "Crafts a positioning statement and messaging hierarchy for a product launch"
 tags: [Production, Campaign, Strategy]
+inputs:
+  product_name:
+    label: "Product Name"
+    description: "The name of the product"
+    example: "Skrptiq"
+    required: true
+    type: text
+  product_details:
+    label: "Product Details"
+    description: "Detailed information about the product"
+    example: "Desktop app + web dashboard. Key features: workflow builder, AI chat, graph view."
+    required: true
+    type: text
+  target_audience:
+    label: "Target Audience"
+    description: "Who this content is for — their role, experience level, and what they care about"
+    example: "Engineering managers at mid-size startups (50-200 employees)"
+    required: true
+    type: text
+  customer_research:
+    label: "Customer Research"
+    description: "Customer research findings"
+    example: "Interview findings from 12 enterprise customers..."
+    required: true
+    type: text
+  competitive_landscape:
+    label: "Competitive Landscape"
+    description: "Overview of the competitive landscape"
+    example: "4 direct competitors, 3 adjacent. Market growing 15% YoY."
+    required: true
+    type: text
 connections:
   - target: launch-messaging-development
     type: derived_from

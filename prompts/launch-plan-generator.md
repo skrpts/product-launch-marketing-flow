@@ -4,6 +4,25 @@ id: launch-plan-generator
 title: Launch Plan Generator
 description: "Generates a detailed launch marketing plan with phases, channels, timeline, and resource allocation"
 tags: [Production, Campaign, Planning]
+inputs:
+  product_name:
+    label: "Product Name"
+    description: "The name of the product"
+    example: "Skrptiq"
+    required: true
+    type: text
+  launch_date:
+    label: "Launch Date"
+    description: "When the product or campaign launches"
+    example: "2026-06-01"
+    required: true
+    type: text
+  target_audience:
+    label: "Target Audience"
+    description: "Who this content is for — their role, experience level, and what they care about"
+    example: "Engineering managers at mid-size startups (50-200 employees)"
+    required: true
+    type: text
 connections:
   - target: channel-strategy
     type: derived_from

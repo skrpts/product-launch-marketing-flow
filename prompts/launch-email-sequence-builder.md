@@ -4,6 +4,25 @@ id: launch-email-sequence-builder
 title: Launch Email Sequence Builder
 description: "Designs a multi-touch email sequence for product launch covering teaser, announcement, and nurture phases"
 tags: [Production, Campaign, Strategy]
+inputs:
+  product_name:
+    label: "Product Name"
+    description: "The name of the product"
+    example: "Skrptiq"
+    required: true
+    type: text
+  launch_date:
+    label: "Launch Date"
+    description: "When the product or campaign launches"
+    example: "2026-06-01"
+    required: true
+    type: text
+  target_audience:
+    label: "Target Audience"
+    description: "Who this content is for — their role, experience level, and what they care about"
+    example: "Engineering managers at mid-size startups (50-200 employees)"
+    required: true
+    type: text
 connections:
   - target: launch-messaging-development
     type: derived_from

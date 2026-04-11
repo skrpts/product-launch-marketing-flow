@@ -4,6 +4,31 @@ id: post-launch-analysis-prompt
 title: Post-Launch Analysis Prompt
 description: "Analyses launch performance against goals and recommends adjustments for ongoing marketing"
 tags: [Production, Campaign, Strategy]
+inputs:
+  product_name:
+    label: "Product Name"
+    description: "The name of the product"
+    example: "Skrptiq"
+    required: true
+    type: text
+  launch_date:
+    label: "Launch Date"
+    description: "When the product or campaign launches"
+    example: "2026-06-01"
+    required: true
+    type: text
+  customer_research:
+    label: "Customer Research"
+    description: "Customer research findings"
+    example: "Interview findings from 12 enterprise customers..."
+    required: true
+    type: text
+  competitive_landscape:
+    label: "Competitive Landscape"
+    description: "Overview of the competitive landscape"
+    example: "4 direct competitors, 3 adjacent. Market growing 15% YoY."
+    required: true
+    type: text
 connections:
   - target: launch-measurement
     type: derived_from

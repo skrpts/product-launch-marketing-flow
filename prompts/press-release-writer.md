@@ -4,6 +4,37 @@ id: press-release-writer
 title: Press Release Writer
 description: "Writes a product launch press release following standard PR format and best practices"
 tags: [Production, Campaign, Writing]
+inputs:
+  product_name:
+    label: "Product Name"
+    description: "The name of the product"
+    example: "Skrptiq"
+    required: true
+    type: text
+  product_details:
+    label: "Product Details"
+    description: "Detailed information about the product"
+    example: "Desktop app + web dashboard. Key features: workflow builder, AI chat, graph view."
+    required: true
+    type: text
+  launch_date:
+    label: "Launch Date"
+    description: "When the product or campaign launches"
+    example: "2026-06-01"
+    required: true
+    type: text
+  target_audience:
+    label: "Target Audience"
+    description: "Who this content is for — their role, experience level, and what they care about"
+    example: "Engineering managers at mid-size startups (50-200 employees)"
+    required: true
+    type: text
+  customer_research:
+    label: "Customer Research"
+    description: "Customer research findings"
+    example: "Interview findings from 12 enterprise customers..."
+    required: true
+    type: text
 connections:
   - target: launch-messaging-development
     type: derived_from
