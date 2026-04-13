@@ -31,16 +31,12 @@ execution:
     step_type: "generation"
   - skill: "channel-strategy"
     step_type: "synthesis"
-    input_from: "launch-messaging-development"
   - skill: "launch-measurement"
     step_type: "synthesis"
-    input_from: "channel-strategy"
   - skill: "audience-segmentation"
     step_type: "synthesis"
-    input_from: "launch-measurement"
   - skill: "image-briefing"
     step_type: "generation"
-    input_from: "audience-segmentation"
 ---
 
 ## Overview
