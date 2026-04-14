@@ -26,6 +26,13 @@ connections:
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
+output_step: "image-briefing"
+composite_steps:
+  - "launch-messaging-development"
+  - "channel-strategy"
+  - "launch-measurement"
+  - "audience-segmentation"
+  - "image-briefing"
 execution:
   - skill: "launch-messaging-development"
     step_type: "generation"
