@@ -44,6 +44,8 @@ execution:
     step_type: "synthesis"
   - skill: "image-briefing"
     step_type: "generation"
+    context:
+      brand_guidelines: ""
 ---
 
 ## Overview
