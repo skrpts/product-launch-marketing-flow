@@ -11,6 +11,10 @@ connections:
     type: uses
   - target: launch-measurement
     type: uses
+  - target: language-polish
+    type: uses
+  - target: consistency-check
+    type: uses
   - target: llm-service
     type: runs_on
   - target: product-launch-framework
@@ -26,7 +30,7 @@ connections:
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
-output_step: "image-briefing"
+output_step: "language-polish"
 composite_steps:
   - "launch-messaging-development"
   - "channel-strategy"
@@ -36,6 +40,7 @@ composite_steps:
 execution:
   - skill: "launch-messaging-development"
     step_type: "generation"
+    prompt: "positioning-statement-writer"
   - skill: "channel-strategy"
     step_type: "synthesis"
   - skill: "launch-measurement"
@@ -135,7 +140,13 @@ Invoke the **launch-measurement** skill to evaluate launch performance against g
 ## Outputs
 
 | Name | Description |
-|------|-------------|
+|------|----------
+  - skill: "language-polish"
+    step_type: "content"
+  - parallel:
+    - skill: "consistency-check"
+      step_type: "review"
+---|
 | Positioning statement, messaging pillars, key claims | Positioning statement, messaging pillars, key claims with proof points, audience-specific value propositions |
 | Complete launch plan using the launch-plan-template format, | Complete launch plan using the launch-plan-template format, with timeline documented in the launch-timeline-template |
 | Publication-ready press release | Publication-ready press release with headline, subheadline, body, quotes, boilerplate, and media contact information |
