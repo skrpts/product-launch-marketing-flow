@@ -49,11 +49,26 @@ execution:
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+    context:
+      market_context: ""
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
     context:
       brand_guidelines: ""
+      audience_profile: ""
+  - skill: "consistency-check"
+    step_type: "review"
+    prompt: "check-consistency"
+    context:
+      voice_profile: ""
+      consistency_strictness: ""
+  - skill: "language-polish"
+    step_type: "content"
+    prompt: "polish-language"
+    context:
+      voice_profile: ""
+      grammar_strictness: ""
 ---
 
 ## Overview
@@ -143,13 +158,7 @@ Invoke the **launch-measurement** skill to evaluate launch performance against g
 ## Outputs
 
 | Name | Description |
-|------|----------
-  - skill: "language-polish"
-    step_type: "content"
-  - parallel:
-    - skill: "consistency-check"
-      step_type: "review"
----|
+|------|-------------|
 | Positioning statement, messaging pillars, key claims | Positioning statement, messaging pillars, key claims with proof points, audience-specific value propositions |
 | Complete launch plan using the launch-plan-template format, | Complete launch plan using the launch-plan-template format, with timeline documented in the launch-timeline-template |
 | Publication-ready press release | Publication-ready press release with headline, subheadline, body, quotes, boilerplate, and media contact information |
