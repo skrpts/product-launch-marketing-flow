@@ -45,30 +45,31 @@ execution:
     prompt: "launch-email-sequence-builder"
     step_type: "synthesis"
   - skill: "launch-measurement"
-    step_type: "synthesis"
+    prompt: "post-launch-analysis-prompt"
+    step_type: "validation"
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
     context:
-      market_context: ""
+      market_context: "No additional market context"
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
     context:
-      brand_guidelines: ""
-      audience_profile: ""
+      brand_guidelines: "No specific brand guidelines"
+      audience_profile: "General professional audience"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
     context:
-      voice_profile: ""
-      consistency_strictness: ""
+      voice_profile: "Neutral professional tone"
+      consistency_strictness: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
     context:
-      voice_profile: ""
-      grammar_strictness: ""
+      voice_profile: "Neutral professional tone"
+      grammar_strictness: "Professional"
 ---
 
 ## Overview
