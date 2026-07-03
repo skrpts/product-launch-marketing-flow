@@ -41,32 +41,39 @@ execution:
   - skill: "launch-messaging-development"
     step_type: "generation"
     prompt: "positioning-statement-writer"
+    output: { name: "messaging", type: "text" }
   - skill: "channel-strategy"
     prompt: "launch-email-sequence-builder"
     step_type: "synthesis"
+    output: { name: "channel_strategy", type: "text" }
   - skill: "launch-measurement"
     prompt: "post-launch-analysis-prompt"
     step_type: "validation"
+    output: { name: "measurement_plan", type: "text" }
   - skill: "audience-segmentation"
     prompt: "segment-audience"
     step_type: "synthesis"
+    output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
+    output: { name: "image_brief", type: "text" }
     context:
       brand_guidelines: "No specific brand guidelines"
       audience_profile: "General professional audience"
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
+    output: { name: "consistency_verdict", type: "decision" }
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
+    output: { name: "polished_plan", type: "text" }
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
