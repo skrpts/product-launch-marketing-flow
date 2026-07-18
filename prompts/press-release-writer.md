@@ -35,6 +35,11 @@ inputs:
     example: "Interview findings from 12 enterprise customers..."
     required: true
     type: text
+context_params:
+  positioning:
+    label: "Positioning Statement"
+    description: "The approved positioning statement from the messaging development step."
+    required: false
 connections:
   - target: launch-messaging-development
     type: derived_from
@@ -50,7 +55,7 @@ You are a PR professional writing a product launch press release. The release mu
 **Product Name:** {{input.product_name}}
 **Company Name:** Extract the company name from {{input.product_details}}.
 **Launch Date:** {{input.launch_date}}
-**Positioning Statement:** {{steps.previous.output}}
+**Positioning Statement:** {{step.context.positioning}}
 **Key Features/Benefits:** Extract from {{input.product_details}}.
 **Pricing/Availability:** Include pricing and availability details from {{input.product_details}} if available.
 **Target Audience:** {{input.target_audience}}

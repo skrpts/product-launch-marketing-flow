@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Establishes the measurement framework for a product launch — defining what success looks like, how to track it, and how to analyse results. Covers both the pre-launch setup of tracking infrastructure and the post-launch analysis of performance against goals.
+Establishes the measurement framework for a product launch — defining what success looks like, how to track it, and how to analyze results. Covers both the pre-launch setup of tracking infrastructure and the post-launch analysis of performance against goals.
 
 ## When to Use
 
@@ -92,5 +92,5 @@ Establishes the measurement framework for a product launch — defining what suc
 - Goals must be specific and measurable — "increase awareness" is not a goal; "achieve 50,000 unique website visitors in launch week" is a goal
 - Attribution is imperfect — acknowledge limitations honestly rather than presenting false precision
 - Separate launch impact from baseline — compare against pre-launch baseline, not zero
-- Do not optimise for vanity metrics — 10,000 page views with 0 sign-ups is a failure, not a success
+- Do not optimize for vanity metrics — 10,000 page views with 0 sign-ups is a failure, not a success
 - Include qualitative signals alongside quantitative data — customer feedback, sales team observations, and support ticket themes provide context that numbers alone cannot

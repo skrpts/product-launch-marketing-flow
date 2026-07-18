@@ -85,7 +85,7 @@ metadata:
 | **L-Day 12:00** | [date/time] | Mid-day metrics check and team sync | Launch Lead | None | [ ] |
 | **L-Day 16:00** | [date/time] | End-of-day metrics review | Growth | None | [ ] |
 | L+1 | [date] | Day 2 social posts and community engagement | Content | None | [ ] |
-| L+1 | [date] | Paid ad performance review and optimise | Growth | None | [ ] |
+| L+1 | [date] | Paid ad performance review and optimize | Growth | None | [ ] |
 | L+2 | [date] | Media follow-up for additional coverage | PR | None | [ ] |
 | L+3 | [date] | Feature deep-dive email sent (Email 4) | Marketing | None | [ ] |
 | L+5 | [date] | Week 1 performance review | Launch Lead | None | [ ] |
@@ -98,7 +98,7 @@ metadata:
 |--------------|---------------|-----------|-------|-------------|--------|
 | L+7 | [date] | Social proof email sent (Email 5) | Marketing | None | [ ] |
 | L+7 | [date] | Early adopter case study interviews begin | Content | Customer engagement | [ ] |
-| L+10 | [date] | Retargeting campaigns optimised | Growth | Performance data | [ ] |
+| L+10 | [date] | Retargeting campaigns optimized | Growth | Performance data | [ ] |
 | L+14 | [date] | Last chance email sent (Email 6) | Marketing | None | [ ] |
 | L+14 | [date] | Two-week performance review | Launch Lead | None | [ ] |
 | L+21 | [date] | Case study drafted | Content | Interviews | [ ] |

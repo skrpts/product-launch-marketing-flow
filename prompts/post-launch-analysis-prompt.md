@@ -49,7 +49,7 @@ You are a marketing analyst conducting a post-launch performance review. Your an
 {{steps.Channel Strategy.output}}
 
 **Actual Performance Data:**
-Analyse the performance data provided by the user for the post-launch period. If specific metrics are not available, note the gaps.
+Analyze the performance data provided by the user for the post-launch period. If specific metrics are not available, note the gaps.
 
 **Channel Performance:**
 Using channel performance data from the launch execution period.
@@ -110,7 +110,7 @@ For each marketing channel used:
 
 ### 4. Messaging Effectiveness
 
-Analyse how the messaging performed:
+Analyze how the messaging performed:
 - Which messaging pillar resonated most strongly? (evidence: click-through rates, engagement, conversion by message variant)
 - Which messaging fell flat? Why?
 - Were there unexpected messages or angles that emerged from customer feedback?
@@ -132,7 +132,7 @@ Analyse how the messaging performed:
 
 ### 7. Qualitative Insights
 
-Synthesise qualitative feedback:
+Synthesize qualitative feedback:
 - Common positive themes from customers and prospects
 - Common concerns or objections raised
 - Feature requests or product feedback surfaced during launch
@@ -150,7 +150,7 @@ Synthesise qualitative feedback:
 
 ### 9. Recommendations
 
-Prioritise into three categories:
+Prioritize into three categories:
 
 **Immediate (next 2 weeks):**
 1. [action] — [rationale] — [expected impact]

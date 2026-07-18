@@ -2,7 +2,7 @@ id: "abfa823e-6b9f-49a2-9d7a-032da39bd4d2"
 name: "product-launch-marketing-flow"
 display_name: "Product Launch Marketing Flow"
 description: "Go-to-market marketing plans for product launches — messaging, channels, timeline, and measurement"
-version: "1.1.25"
+version: "1.1.26"
 engine: ">=0.1.0"
 
 author:
@@ -54,8 +54,8 @@ dependencies:
     checksum: "sha256:455c8bf590a9426d830bffd1a741afa058149bc29c58186c34d0d8699bea4bda"
   - id: "9b1771e0-39b0-4fbc-8d45-738f51b6083a"
     name: "polish-language"
-    version: 1.0.1
-    checksum: "sha256:2a666b1a1566e45a3d69cf3fac51399a471169184409ef54d588f69b7da7097e"
+    version: 1.0.6
+    checksum: "sha256:c9ad71f960c5bd2bdafc8c41a283acce4fb34ee9b9dc5f761d7443b5f18ecc40"
   - id: "18479da6-a5f3-4755-b9a4-5bdbc9196b0d"
     name: "segment-audience"
     version: 1.0.1
@@ -72,18 +72,18 @@ requires:
     - "customer-segments"
 
 contents:
-  skills: 3
+  skills: 5
   prompts: 5
   workflows: 1
   services: 0
   sources: 1
   documents: 1
   assets: 2
-  total: 13
+  total: 15
 
 security:
   status: "pass"
-  scanned_at: "2026-07-03T15:58:23.499Z"
+  scanned_at: "2026-07-18T15:37:37.151Z"
   scanner_version: "3.3.0"
   syntactic: "pass"
   structural: "pass"

@@ -111,7 +111,7 @@ Purpose: Final conversion push for engaged but unconverted contacts
 
 - **Subject Line:** [urgency + value reminder, not pushy]
 - **Preview Text:** [what they are missing]
-- **Body:** Acknowledge they have been considering the product. Summarise the value proposition in fresh language. If there is a launch offer expiring, mention the deadline. Offer an alternative next step for those not ready to commit (webinar, guide, demo). 120-150 words.
+- **Body:** Acknowledge they have been considering the product. Summarize the value proposition in fresh language. If there is a launch offer expiring, mention the deadline. Offer an alternative next step for those not ready to commit (webinar, guide, demo). 120-150 words.
 - **CTA:** Primary: the recommended launch CTA | Secondary: the recommended post-launch CTA
 - **Design Notes:** [clean, simple design, dual CTA buttons]
 
@@ -128,6 +128,6 @@ Provide the specific subject line and opening paragraph variations for each segm
 - Keep subject lines under 50 characters where possible
 - Include plain text version guidance
 - Recommend send times based on general B2B/B2C best practices
-- Include unsubscribe and preference centre reminders
+- Include unsubscribe and preference center reminders
 
 Use British English throughout.

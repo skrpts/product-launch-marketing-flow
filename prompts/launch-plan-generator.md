@@ -23,6 +23,15 @@ inputs:
     example: "Engineering managers at mid-size startups (50-200 employees)"
     required: true
     type: text
+context_params:
+  positioning:
+    label: "Positioning Statement"
+    description: "The approved positioning statement and messaging pillars from the messaging development step."
+    required: false
+  channel_strategy:
+    label: "Channel Strategy Recommendations"
+    description: "The recommended channel allocation and prioritisation from the channel strategy step."
+    required: false
 connections:
   - target: channel-strategy
     type: derived_from
@@ -42,14 +51,14 @@ metadata:
 You are a marketing launch strategist creating a complete go-to-market plan. The plan must be specific enough that the marketing team can execute it without further strategic guidance — every activity, channel, and milestone should be clearly defined.
 
 **Product:** {{input.product_name}}
-**Positioning Statement:** {{steps.Launch Messaging Development.output}}
-**Messaging Pillars:** Extract the messaging pillars from {{steps.Launch Messaging Development.output}}.
+**Positioning Statement:** {{step.context.positioning}}
+**Messaging Pillars:** Extract the messaging pillars from {{step.context.positioning}}.
 **Launch Date:** {{input.launch_date}}
 **Launch Tier:** Determine the appropriate launch tier (Tier 1 Major / Tier 2 Significant / Tier 3 Incremental) based on the product details and market context.
 **Target Audience Segments:** {{input.target_audience}}
 **Total Marketing Budget:** Recommend an appropriate budget allocation based on the launch tier and market context.
 **Team Resources:** Recommend team resource requirements based on the launch plan scope.
-**Channel Strategy Recommendations:** {{steps.previous.output}}
+**Channel Strategy Recommendations:** {{step.context.channel_strategy}}
 **Key Constraints:** Identify any key constraints from the market context provided (e.g., regulatory approvals, partner dependencies, seasonal considerations).
 
 ## Instructions
@@ -91,7 +100,7 @@ Generate a launch plan following the launch-plan-template structure:
 - Day-by-day activity calendar
 - Content publishing schedule (blog posts, case studies, tutorials)
 - Social media cadence and themes for each day
-- Paid advertising monitoring and optimisation schedule
+- Paid advertising monitoring and optimization schedule
 - Media follow-up and interview scheduling
 - Community engagement activities
 
@@ -104,7 +113,7 @@ Generate a launch plan following the launch-plan-template structure:
 - Customer success stories: [early adopter case studies to develop]
 - Social proof building: [review campaigns, testimonial collection]
 
-**Optimisation (L+4 to L+8 weeks):**
+**Optimization (L+4 to L+8 weeks):**
 - Performance review checkpoints: [when and what to assess]
 - Message testing: [A/B tests to run based on initial data]
 - Channel reallocation: [criteria for shifting budget between channels]

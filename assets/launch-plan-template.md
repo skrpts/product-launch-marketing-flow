@@ -120,7 +120,7 @@ metadata:
 |------|----------|-------|--------|
 | L+1 | Social proof email | [name] | [ ] |
 | L+2 | Last chance email | [name] | [ ] |
-| L+3 | Retargeting optimisation | [name] | [ ] |
+| L+3 | Retargeting optimization | [name] | [ ] |
 | L+4 | Post-launch analysis | [name] | [ ] |
 
 ---

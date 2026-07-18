@@ -14,7 +14,7 @@ metadata:
 
 ## Launch Planning Playbook
 
-This playbook provides a practical, step-by-step guide for planning and executing a product launch. It covers the full lifecycle from initial strategy through post-launch optimisation, with checklists and decision points at each stage.
+This playbook provides a practical, step-by-step guide for planning and executing a product launch. It covers the full lifecycle from initial strategy through post-launch optimization, with checklists and decision points at each stage.
 
 ### Before You Start: The Three Questions
 
@@ -62,7 +62,7 @@ This is the most important step. Everything else flows from positioning.
 
 **Process:**
 1. Determine launch tier based on the product-launch-framework criteria
-2. Run the channel-strategy skill to evaluate and prioritise channels
+2. Run the channel-strategy skill to evaluate and prioritize channels
 3. Run the launch-plan-generator prompt to produce the complete plan
 4. Review plan with the launch team and extended stakeholders
 5. Finalise budget allocation and get spending approval
@@ -134,7 +134,7 @@ This is the most important step. Everything else flows from positioning.
 
 The biggest mistake teams make is treating launch day as the finish line. Launch day is the starting gun.
 
-**Week 1:** Feature deep-dive email (Email 4), continued social posting, paid ad optimisation, media follow-up
+**Week 1:** Feature deep-dive email (Email 4), continued social posting, paid ad optimization, media follow-up
 **Week 2:** Social proof email (Email 5), customer story development, retargeting campaigns
 **Week 3:** Last chance email (Email 6), content marketing (guides, tutorials, use cases)
 **Week 4:** Performance review, strategy adjustment, transition to ongoing marketing

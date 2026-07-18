@@ -16,7 +16,7 @@ metadata:
 
 ## Capability
 
-Evaluates available marketing channels against launch goals, target audience behaviour, budget constraints, and team capabilities to produce a prioritised channel strategy. Ensures launch resources are allocated to the channels most likely to deliver results rather than spread thinly across every available option.
+Evaluates available marketing channels against launch goals, target audience behavior, budget constraints, and team capabilities to produce a prioritized channel strategy. Ensures launch resources are allocated to the channels most likely to deliver results rather than spread thinly across every available option.
 
 ## When to Use
 
@@ -42,7 +42,7 @@ Evaluates available marketing channels against launch goals, target audience beh
    - **Speed:** How quickly can this channel generate results?
    - **Capability:** Does the team have the skills and resources to execute well on this channel?
 
-3. **Channel Tiering** — Categorise channels into:
+3. **Channel Tiering** — Categorize channels into:
    - **Primary channels (60-70% of budget/effort):** Highest confidence channels that directly reach the target audience. These carry the core launch message.
    - **Supporting channels (20-30% of budget/effort):** Channels that amplify the primary message, provide social proof, or reach secondary audiences.
    - **Experimental channels (5-10% of budget/effort):** New or unproven channels worth testing during the launch to gather data for future launches.
@@ -73,7 +73,7 @@ Evaluates available marketing channels against launch goals, target audience beh
 
 ## Outputs
 
-- Prioritised channel list with tier assignments
+- Prioritized channel list with tier assignments
 - Budget allocation by channel with rationale
 - Channel sequencing timeline
 - Success metrics and targets by channel

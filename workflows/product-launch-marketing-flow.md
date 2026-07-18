@@ -11,6 +11,10 @@ connections:
     type: uses
   - target: launch-measurement
     type: uses
+  - target: press-release-writing
+    type: uses
+  - target: launch-plan-development
+    type: uses
   - target: language-polish
     type: uses
   - target: consistency-check
@@ -37,6 +41,8 @@ composite_steps:
   - "launch-measurement"
   - "audience-segmentation"
   - "image-briefing"
+  - "press-release-writing"
+  - "launch-plan-development"
 execution:
   - skill: "launch-messaging-development"
     step_type: "generation"
@@ -63,6 +69,25 @@ execution:
     context:
       brand_guidelines: "No specific brand guidelines"
       audience_profile: "General professional audience"
+  - skill: "press-release-writing"
+    prompt: "press-release-writer"
+    step_type: "generation"
+    output: { name: "press_release", type: "text" }
+    bindings:
+      positioning:
+        from_step: "Launch Messaging Development"
+        field: output
+  - skill: "launch-plan-development"
+    prompt: "launch-plan-generator"
+    step_type: "synthesis"
+    output: { name: "launch_plan", type: "text" }
+    bindings:
+      positioning:
+        from_step: "Launch Messaging Development"
+        field: output
+      channel_strategy:
+        from_step: "Channel Strategy"
+        field: output
   - skill: "consistency-check"
     step_type: "review"
     prompt: "check-consistency"
@@ -77,11 +102,15 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       grammar_strictness: "Professional"
+    bindings:
+      source:
+        from_step: "Launch Plan Development"
+        field: output
 ---
 
 ## Overview
 
-This workflow produces a complete marketing plan for a product launch, from initial positioning and messaging through channel strategy, campaign execution assets, and post-launch performance analysis. It is designed to run in phases that mirror the actual launch timeline: pre-launch preparation, launch execution, and post-launch optimisation.
+This workflow produces a complete marketing plan for a product launch, from initial positioning and messaging through channel strategy, campaign execution assets, and post-launch performance analysis. It is designed to run in phases that mirror the actual launch timeline: pre-launch preparation, launch execution, and post-launch optimization.
 
 ## Pipeline Stages
 
@@ -178,7 +207,7 @@ Invoke the **launch-measurement** skill to evaluate launch performance against g
 Before running this workflow:
 
 1. No external services required — paste your content directly and provide any supporting context as inputs or source nodes.
-2. Review the included documents, assets, or source nodes and customise them to match your team, brand, or domain conventions where needed.
+2. Review the included documents, assets, or source nodes and customize them to match your team, brand, or domain conventions where needed.
 3. No specific AI provider or API key is required beyond your configured skrptiq LLM provider.
 
 ## Provider Notes
