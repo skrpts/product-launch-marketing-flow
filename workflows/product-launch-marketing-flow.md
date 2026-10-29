@@ -62,6 +62,10 @@ execution:
     output: { name: "audience_segments", type: "list" }
     context:
       market_context: "No additional market context"
+    bindings:
+      source:
+        from_step: "Launch Messaging Development"
+        field: output
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
@@ -69,6 +73,10 @@ execution:
     context:
       brand_guidelines: "No specific brand guidelines"
       audience_profile: "General professional audience"
+    bindings:
+      source:
+        from_step: "Audience Segmentation"
+        field: output
   - skill: "press-release-writing"
     prompt: "press-release-writer"
     step_type: "generation"
@@ -95,6 +103,10 @@ execution:
     context:
       voice_profile: "Neutral professional tone"
       consistency_strictness: "Standard"
+    bindings:
+      source:
+        from_step: "Launch Plan Development"
+        field: output
   - skill: "language-polish"
     step_type: "content"
     prompt: "polish-language"
