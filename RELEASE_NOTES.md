@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.28
+GH#1144 part 1 — the `segment-audience` step bound its `source` slot ("Product or Campaign") `from_step: "Launch Messaging Development"`. No workflow step produces a product description, so that was a guess at a producer rather than a supply. It now binds a new required workflow input, `product_or_campaign`, matching the four sibling consumers. This is the binding GH#1139 was filed over: once the slot declares `supplied_by: input`, the old form is refused rather than merely wrong.
+
 ## v1.1.27
 GH#1100 consumer wave batch 5 — declare the data flow these steps were resolving positionally. 3 binding(s) added: `segment-audience` ← Launch Messaging Development; `create-image-brief` ← Audience Segmentation; `check-consistency` ← Launch Plan Development. Each dependency was also re-pinned to the version that introduced its `source` slot, with checksums resolved from the live catalogue rather than transcribed — a binding against a pin below the slot version is declared but inert, which the canonical scan reports as `execution_bindings_unused_key`.
 

@@ -31,6 +31,13 @@ connections:
     type: uses
   - target: image-briefing
     type: uses
+inputs:
+  product_or_campaign:
+    label: "Product or Campaign"
+    description: "The product or campaign the audience is being segmented for"
+    example: "A time-tracking app for freelancers, targeting the UK market"
+    required: true
+    type: text
 metadata:
   estimated_duration: "35-50 minutes"
   trigger: manual
@@ -64,8 +71,7 @@ execution:
       market_context: "No additional market context"
     bindings:
       source:
-        from_step: "Launch Messaging Development"
-        field: output
+        from_input: "product_or_campaign"
   - skill: "image-briefing"
     prompt: "create-image-brief"
     step_type: "generation"
