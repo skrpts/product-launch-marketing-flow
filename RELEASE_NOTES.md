@@ -1,5 +1,8 @@
 # Release Notes
 
+## v1.1.29
+GH#1144 part 1 round 2 — re-pin `audience-segmentation`→1.0.3 so the newly declared `supplied_by: input` slot is in scope. A declaration against a pin that predates it is inert: until this re-pin the engine's GH#1139 shape gate could not see it. Checksums resolved from the live catalogue rather than transcribed. No behaviour change here — this step makes the existing `from_input` binding(s) enforced rather than merely correct.
+
 ## v1.1.28
 GH#1144 part 1 — the `segment-audience` step bound its `source` slot ("Product or Campaign") `from_step: "Launch Messaging Development"`. No workflow step produces a product description, so that was a guess at a producer rather than a supply. It now binds a new required workflow input, `product_or_campaign`, matching the four sibling consumers. This is the binding GH#1139 was filed over: once the slot declares `supplied_by: input`, the old form is refused rather than merely wrong.
 
